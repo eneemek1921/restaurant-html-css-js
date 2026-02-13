@@ -1,0 +1,133 @@
+
+    * {
+        text-align: center;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 700;
+    }
+
+    html {
+        background-color: rgb(226, 226, 226);
+    }
+
+    .menu, .header {
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+
+    .menu-item {
+        display: flex;
+        position: relative;
+        gap: 50px;
+    }
+
+    .menu-button {
+        font-size: 200%;
+        border-radius: 10px;
+        border: 3px solid black;
+        background-color: white;
+        transition: all 0.3s ease;
+    }
+    
+    .menu-button:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .footer {
+        display: flex;
+        position: relative;
+    }
+
+    .footer-content {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        user-select: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 150%;
+    }
+
+    .dishCard {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        border: 1px solid black;
+        width: 500px;
+        height: auto;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.473);
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .dishCard:hover {
+        transform: scale(1.2);
+    }
+
+    .dishCard.scaled {
+        transform: translateX(-50px) scale(1.2);
+    }
+
+    .list-content {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .list {
+        display: flex;
+        justify-content: center;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    .fade-in {
+        animation: fadeIn 0.8s ease;
+    }
+
+    .images-dishes {
+        display: flex;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 2%;
+        justify-content: center;
+        gap: 200px;
+    }
+
+    .images-dishes img {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        border: 3px solid black;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.438);
+        cursor: pointer;
+    }
